@@ -6,6 +6,6 @@ const foodpartnerSchema = new mongoose.Schema({
   password: { type: String, required: true },
 });
 
-const FoodPartner = mongoose.model("foodpartner", foodpartnerSchema);
+const foodPartner = mongoose.model("foodpartner", foodpartnerSchema);
 
-module.exports = FoodPartner;
+module.exports = foodPartner;
