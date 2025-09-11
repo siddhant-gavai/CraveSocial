@@ -5,6 +5,12 @@ const { v4: uuid } = require("uuid");
 // Create new food item
 
 async function createFood(req, res) {
+  console.log(req.file); // Debugging purpose
+
+  if (!req.file || !req.file.buffer) {
+    return res.status(400).json({ message: "Video file is required" });
+  }
+
   const fileUploadResult = await storageService.uploadFile(
     req.file.buffer,
     uuid()
