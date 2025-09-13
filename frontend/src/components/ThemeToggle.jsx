@@ -8,24 +8,22 @@ const ThemeToggle = () => {
   }, [theme]);
 
   return (
-    <div style={{ textAlign: "right", padding: "0.5rem" }}>
-      <button
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        style={{
-          height: "2rem", // 🔹 smaller button
-          width: "6rem", // 🔹 smaller button
-          padding: "0.3rem 0.7rem", // 🔹 smaller button
-          fontSize: "0.8rem", // 🔹 smaller text
-          border: "none",
-          borderRadius: "6px",
-          backgroundColor: "var(--button-bg)",
-          color: "var(--button-text)",
-          cursor: "pointer",
-        }}
-      >
-        {theme === "light" ? "🌙 Dark" : "☀️ Light"}
-      </button>
-    </div>
+    <button
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      style={{
+        position: "absolute",
+        top: "20px",
+        right: "20px",
+        padding: "6px 12px",
+        borderRadius: "6px",
+        border: "none",
+        cursor: "pointer",
+        background: "var(--btn-bg)",
+        color: "var(--btn-text)",
+      }}
+    >
+      {theme === "light" ? "🌙 Dark" : "☀️ Light"}
+    </button>
   );
 };
 

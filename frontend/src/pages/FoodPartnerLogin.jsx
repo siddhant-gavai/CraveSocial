@@ -9,6 +9,9 @@ const FoodPartnerLogin = () => {
         <input type="email" placeholder="Email Address" />
         <input type="password" placeholder="Password" />
         <button type="submit">Login</button>
+        <h5 style={{ marginTop: "1rem", width: "100%", textAlign: "center" }}>
+          Don't have an account? <a href="/food-partner/register">Sign up</a>
+        </h5>
       </form>
     </div>
   );
