@@ -1,0 +1,13 @@
+[33mb168634[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m refactored frontend structure - moved routes and cleaned old files
+[33mf23a95f[m some changes
+[33m6207588[m add some styling chnage a foofpartnerModel and frontend code add
+[33mbd92943[m for changing background dark to white and dark creating a toggle button
+[33mf6dc701[m Added user & food partner register/login pages with centralized theme and light/dark mode support
+[33m6569b88[m create vite app for the project
+[33mf22f57c[m  add validation for food controllers
+[33m9ecfb5c[m Add food creation API with file upload and auth middleware
+[33mede8e7f[m add video for explore api work properly or not
+[33m1a6547e[m use imagekit for storing the video
+[33me27696f[m Added createFood controller logic and protected food creation route
+[33mdf6a056[m create food-partner and some api's run
+[33m02d59c8[m Add User model and implement authentication routes (register, login, token handling)
